@@ -1,0 +1,24 @@
+@media screen and (max-width:1023px) {
+    body {
+        font-size: medium;
+    }
+
+    .navbar-button {
+        font-size: 1rem;
+    }
+    
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .first-part {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .second-part {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

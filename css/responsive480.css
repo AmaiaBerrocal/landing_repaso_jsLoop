@@ -1,0 +1,28 @@
+@media screen and (max-width:480px) {
+    body {
+        font-size: medium;
+    }
+
+    .seccion-3-1 {
+        width: 90%;
+    }
+
+    .footer-container {
+        width: 100%;
+        
+    }
+    .photo {
+        margin-left: 0;
+    }
+
+    .rrss {
+        padding: 1rem;
+    }
+
+    .bottom-part-center {   
+        flex-direction: column; 
+    }
+    .bottom-part-center hr {
+        height: 1px;
+    }
+}
