@@ -204,7 +204,7 @@
     height: auto;
 }
 
-.blog, .portfolio , .formulario {
+.blog, .portfolio , .form {
     background-color: #F7F7F7;
     width: 100%;
     display: flex;
@@ -253,6 +253,10 @@
     font-weight: bold;
     width: auto;
     height: auto;
+}
+
+.formulary {
+    margin: 2rem;
 }
 
 .footer {

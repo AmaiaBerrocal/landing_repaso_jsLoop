@@ -1,7 +1,12 @@
-function logRangeOfNumbers(numFrom, numTo) {
+
+
+
+
+
+function printRangeOfNumbers(numFrom, numTo) {
     for (let i = numFrom; i <= numTo; i++) {
-        console.log(i);
+        alert(i);
     }
 }
 
-logRangeOfNumbers(1, 5);
+printRangeOfNumbers(1, 5);
