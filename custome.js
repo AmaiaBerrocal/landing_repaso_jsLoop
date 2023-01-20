@@ -25,3 +25,8 @@ function calculateRangeOfNumbers(numFrom, numTo) {
     }
     document.querySelector("#results").innerHTML = result;
 }
+
+let chequeado = document.getElementById("cbox").checked
+if (chequeado){
+    
+}
