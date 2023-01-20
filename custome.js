@@ -27,6 +27,9 @@ function calculateRangeOfNumbers(numFrom, numTo) {
 }
 
 let chequeado = document.getElementById("cbox").checked
-if (chequeado){
-    
+console.log(chequeado)
+if chequeado == true{
+    // document.getElementById("boton").setAttribute(enabled)
 }
+    
+
