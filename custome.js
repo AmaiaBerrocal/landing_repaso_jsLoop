@@ -1,24 +1,27 @@
+document.querySelector("#boton").addEventListener("click", printRangeOfNumbers);
 
-document.getElementById("boton").addEventListener("click",printRangeOfNumbers)
+const imput1 = document.getElementById("firstNumber");
+const imput2 = document.getElementById("secondNumber");
 
-//let firstImput = document.getElementById("firstNumber").value;
-let firstNumber = 10//parseInt(firstImput)
-let secondNumber =20
-
-function printRangeOfNumbers(numFrom, numTo) {
-    let parrafo= document.createElement("p")
-    let result = ""
-    for (let i = numFrom; i <= numTo; i++) {
-        console.log(i)
-        result += i + ", "
+function printRangeOfNumbers() {
+    let firstNumber = parseInt(imput1.value); 
+    let secondNumber = parseInt(imput2.value); 
+    
+    if (firstNumber < secondNumber) {
+        calculateRangeOfNumbers(firstNumber, secondNumber);
+    } else {
+        calculateRangeOfNumbers(secondNumber, firstNumber);
     }
-    parrafo.innerHTML = result
-    let contenedor = document.getElementById("resultado")
-    contenedor.appendChild(parrafo)
 }
 
-if(firstNumber < secondNumber){
-    printRangeOfNumbers(firstNumber, secondNumber)
-}else{
-    printRangeOfNumbers(secondNumber, firstNumber)
+function calculateRangeOfNumbers(numFrom, numTo) {
+    let result = "";
+    for (let i = numFrom; i <= numTo; i+=3) {
+        if (i !=  numTo) {
+            result += i + ", ";
+        } else {
+            result += i + "."; 
+        }
+    }
+    document.querySelector("#results").innerHTML = result;
 }
