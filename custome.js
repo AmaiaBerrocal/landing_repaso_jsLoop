@@ -17,11 +17,11 @@ function printRangeOfNumbers() {
 function calculateRangeOfNumbers(numFrom, numTo) {
     let result = "";
     for (let i = numFrom; i <= numTo; i+=3) {
-        if (i !=  numTo) {
-            result += i + ", ";
-        } else {
-            result += i + "."; 
-        }
+            if (i !=  numTo) {
+                result += i + ", ";
+            } else {
+                result += i + "."; 
+            }
     }
     document.querySelector("#results").innerHTML = result;
 }
