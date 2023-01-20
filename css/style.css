@@ -259,6 +259,15 @@
     margin: 2rem;
 }
 
+#results {
+    color: black;
+    border: 2px solid black;
+    background-color: pink;
+    width: 30%;
+    height: 30px;
+    margin: 2rem auto;
+}
+
 .footer {
     background-color: black;
     width: 100%;
@@ -266,6 +275,7 @@
     display: flex;
     justify-content: center;
 }
+
 
 .footer-container {
     width: 70%; 

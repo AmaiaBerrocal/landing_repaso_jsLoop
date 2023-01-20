@@ -1,12 +1,28 @@
+document.querySelector("#boton").addEventListener("click", printRangeOfNumbers);
 
+const firstNumber = parseInt(document.querySelector("#firstNumber").value); 
+const secondNumber = parseInt(document.querySelector("#secondNumber").value);
 
-
-
-
-function printRangeOfNumbers(numFrom, numTo) {
-    for (let i = numFrom; i <= numTo; i++) {
-        alert(i);
+function printRangeOfNumbers() {
+    if (firstNumber < secondNumber) {
+        calculateRangeOfNumbers(firstNumber, secondNumber);
+    } else {
+        calculateRangeOfNumbers(secondNumber, firstNumber);
     }
 }
 
-printRangeOfNumbers(1, 5);
+function calculateRangeOfNumbers(numFrom, numTo) {
+    let result = "";
+    for (let i = numFrom; i <= numTo; i++) {
+        if (i !=  numTo) {
+            result += i + " ,";
+            console.log( "Estoy en el if" + result);
+        } else {
+            result += i + "."; 
+            console.log("Estoy en el else" + result);
+
+        }
+    }
+    console.log(result);
+    document.querySelector("#results").innerHTML = result;
+}
