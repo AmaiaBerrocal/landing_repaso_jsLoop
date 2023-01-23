@@ -29,7 +29,7 @@ function calculateRangeOfNumbers(numFrom, numTo) {
 let chequeado = document.getElementById("cbox").checked
 console.log(chequeado)
 if chequeado == true{
-    // document.getElementById("boton").setAttribute(enabled)
+    
 }
     
 
