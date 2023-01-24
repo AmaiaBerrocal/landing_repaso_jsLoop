@@ -26,10 +26,18 @@ function calculateRangeOfNumbers(numFrom, numTo) {
     document.querySelector("#results").innerHTML = result;
 }
 
-let chequeado = document.getElementById("cbox").checked
-console.log(chequeado)
-if chequeado == true{
-    
+let check = document.getElementById("cbox");
+let button = document.getElementById("boton");
+
+check.addEventListener("click", changeCheck);
+function changeCheck() {
+    check.checked = true;
+    console.log(check.checked)
+}
+
+if (check.checked = true) {
+    console.log(button.disabled);
+
 }
     
 
