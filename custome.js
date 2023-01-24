@@ -28,16 +28,14 @@ function calculateRangeOfNumbers(numFrom, numTo) {
 
 let check = document.getElementById("cbox");
 let button = document.getElementById("boton");
+check.addEventListener("click", disbleSending)
 
-check.addEventListener("click", changeCheck);
-function changeCheck() {
-    check.checked = true;
-    console.log(check.checked)
-}
-
-if (check.checked = true) {
+function disbleSending(){
     console.log(button.disabled);
-
-}
+    console.log(check.checked);
+    button.disabled = !check.checked;
+    console.log(button.disabled);
+    console.log(check.checked);
     
+}
 
