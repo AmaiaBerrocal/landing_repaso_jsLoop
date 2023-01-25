@@ -39,5 +39,3 @@ if (check.checked = true) {
     console.log(button.disabled);
 
 }
-    
-
