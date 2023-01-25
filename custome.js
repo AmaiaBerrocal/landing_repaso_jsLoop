@@ -28,8 +28,33 @@ function calculateRangeOfNumbers(numFrom, numTo) {
 
 let check = document.getElementById("cbox");
 let button = document.getElementById("boton");
-check.addEventListener("change", disbleSending)
+check.addEventListener("click", disbleSending)
 
 function disbleSending(){
-    button.disabled = !check.checked;
+    button.disabled = !check.checked; 
 }
+
+// function disbleSending() {
+//     if (check.checked) {
+//         button.disabled = false;
+//     } else {
+//         button.disabled = true;
+//     }
+// }
+
+// function disbleSending() {
+//     check.checked ? button.disabled = false : button.disabled = true;
+// }
+
+// function disbleSending() {
+//     switch (check.checked) {
+//         case true:
+//             button.disabled = false;
+//             console.log(button.disabled)
+//             break;
+//         case false:
+//             button.disabled = true;
+//             console.log(button.disabled)
+//             break;
+//     }
+// }
